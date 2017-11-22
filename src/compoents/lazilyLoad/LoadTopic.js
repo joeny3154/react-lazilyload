@@ -1,13 +1,13 @@
 import React from 'react'
-import LazilyLoad from '../commons/LazilyLoad'
+import Bundle from '../commons/Bundle'
+import BundleTopic from '../bundleLoader/Topic.bundle.js'
 
-const LoadTopic = (props) => (
-  <LazilyLoad load={() => import('../Topic.js')}>
-    {
-      (Topic) => <Topic {...props}/>
-    }
-  </LazilyLoad>
-)
-
+const LoadTopic = (props) => {
+  return (
+    <Bundle load={BundleTopic}>
+      {(Topic) => <Topic {...props}/>}
+    </Bundle>
+  )
+}
 
 export default LoadTopic
