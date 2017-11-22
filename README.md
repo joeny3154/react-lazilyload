@@ -3,17 +3,17 @@ React 懒加载
 
 `src/compoents/commons`中封装了如下 3 个用于懒加载的高阶组件：
 
-# `Bundle.js`
+### `Bundle.js`
 
 配合`bundle-loader`使用懒加载方案, 这需要添加在webpack配置中添加`bundle-loader`加载器。示例可查看`src/compoents/LoadTopic.js`。
 
 *终端执行`yarn run eject`命令可以暴露webpack配置，在`build/webpack.config.dev.js` 和 `build/webpack.config.dev.js`添加`bundle-loader`*
 
-# `LazilyLoad.js`
+### `LazilyLoad.js`
 
 使用最新的`import()`替代Bundle组件。示例可查看`src/compoents/LoadAbout.js`。
 
-# `LazilyLoad2.js`
+### `LazilyLoad2.js`
 
 `LazilyLoad`的升级版，可以懒加载多个组件, 示例可查看`src/compoents/LoadHome.js`; 
 
