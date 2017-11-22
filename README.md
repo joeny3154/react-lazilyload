@@ -7,7 +7,7 @@ React 懒加载
 
 配合`bundle-loader`使用懒加载方案, 这需要添加在webpack配置中添加`bundle-loader`加载器。示例可查看`src/compoents/lazilyLoad/LoadTopic.js`。
 
-提示：*终端执行`yarn run eject`命令可以暴露webpack配置，在`build/webpack.config.dev.js` 和 `build/webpack.config.dev.js`添加`bundle-loader`*
+提示：*终端执行`yarn run eject`命令可以暴露webpack配置，在`config/webpack.config.dev.js` 和 `config/webpack.config.dev.js`添加`bundle-loader`*
 
 ### `LazilyLoad.js`
 
